@@ -1,0 +1,14 @@
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.exe
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.deps.json
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.runtimeconfig.json
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.dll
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.pdb
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.AssemblyInfoInputs.cache
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.AssemblyInfo.cs
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.csproj.CoreCompileInputs.cache
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.dll
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\refint\Gestor.Exception.dll
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.pdb
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.genruntimeconfig.cache
+C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\ref\Gestor.Exception.dll
