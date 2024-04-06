@@ -25,6 +25,7 @@ public class UpdateUseCase
             entity.Senha = request.Senha;
             entity.Usuario = request.Usuario;
             entity.Salario = request.Salario;
+            entity.Setor = request.Setor;
 
             _dbContext.Funcionarios.Update(entity);
             await _dbContext.SaveChangesAsync();
@@ -57,6 +58,9 @@ public class UpdateUseCase
 
         if (string.IsNullOrWhiteSpace(request.Senha))
             throw new ErrorBadRequestException("Senha é invalido!");
+
+        if (string.IsNullOrWhiteSpace(request.Setor))
+            throw new ErrorBadRequestException("Setor é invalido!");
 
         if (request.Salario <= 0)
             throw new ErrorBadRequestException("Salário é invalido!");

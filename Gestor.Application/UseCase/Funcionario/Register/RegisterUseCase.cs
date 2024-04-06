@@ -26,7 +26,8 @@ public class RegisterUseCase
             Nome = request.Nome,
             Salario = request.Salario,
             Usuario = request.Usuario,
-            Senha = request.Senha
+            Senha = request.Senha,
+            Setor = request.Setor
         };
 
         await _dbContext.Funcionarios.AddAsync(entity);
@@ -52,6 +53,9 @@ public class RegisterUseCase
 
         if (string.IsNullOrWhiteSpace(request.Usuario))
             throw new ErrorBadRequestException("Usuário é invalido!");
+
+        if (string.IsNullOrWhiteSpace(request.Setor))
+            throw new ErrorBadRequestException("Setor é invalido!");
 
         if (string.IsNullOrWhiteSpace(request.Senha))
             throw new ErrorBadRequestException("Senha é invalido!");
