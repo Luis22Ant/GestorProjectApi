@@ -38,6 +38,11 @@ namespace GestorApi.Filter
                 context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Conflict;
                 context.Result = new ConflictObjectResult(new ResponseException(context.Exception.Message));
             }
+            else if (context.Exception is UnauthorizedAccess)
+            {
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                context.Result = new UnauthorizedObjectResult(new ResponseException(context.Exception.Message));
+            }
         }
         private void UnknownError(ExceptionContext context)
         {

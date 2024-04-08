@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Gestor.Infra.Entities;
 
@@ -11,4 +12,7 @@ public class Funcionario
     public string Senha { get; set; } = string.Empty;
     public double Salario { get; set; }
     public string Setor { get; set; } = string.Empty;
+
+    [ForeignKey("IdFuncionario")]
+    public List<Demanda> Demandas { get; set; } = [];
 }
