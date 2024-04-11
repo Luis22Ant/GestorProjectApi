@@ -27,7 +27,8 @@ public class GetByIdUseCase
             Usuario = entity.Usuario,
             Senha = entity.Senha,
             Salario = entity.Salario,
-            Setor = entity.Setor
+            Setor = entity.Setor,
+            Email = entity.Email
         };
     }
 }

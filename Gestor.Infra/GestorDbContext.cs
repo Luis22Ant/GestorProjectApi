@@ -13,6 +13,6 @@ public class GestorDbContext : DbContext
     public DbSet<Funcionario> Funcionarios { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS02;Database=Gestor;UID=LUISPC\\Elton Oliveira;PWD='';Integrated Security=true;trustServerCertificate=true");
+        optionsBuilder.UseSqlServer("server=DESKTOP-215IJJK;Database=Gestor;UID=DESKTOP-215IJJK\\galoc;PWD='';Integrated Security=true;trustServerCertificate=true");
     }
 }

@@ -2,6 +2,7 @@
 using Gestor.Communication.Response;
 using Gestor.Exception;
 using Gestor.Infra;
+using System.Net.Mail;
 
 namespace Gestor.Application.UseCase.Funcionario.Update;
 
@@ -26,6 +27,7 @@ public class UpdateUseCase
             entity.Usuario = request.Usuario;
             entity.Salario = request.Salario;
             entity.Setor = request.Setor;
+            entity.Email = request.Email;
 
             _dbContext.Funcionarios.Update(entity);
             await _dbContext.SaveChangesAsync();
@@ -65,5 +67,21 @@ public class UpdateUseCase
         if (request.Salario <= 0)
             throw new ErrorBadRequestException("Salário é invalido!");
 
+        if (!EmailIsValid(request.Email))
+            throw new ErrorBadRequestException("Email é invalido!");
+
+    }
+
+    private bool EmailIsValid(string email)
+    {
+        try
+        {
+            new MailAddress(email);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
     }
 }

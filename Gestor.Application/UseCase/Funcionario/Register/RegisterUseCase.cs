@@ -4,6 +4,7 @@ using Gestor.Communication.Response;
 using Gestor.Exception;
 using Gestor.Infra;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Mail;
 
 namespace Gestor.Application.UseCase.Funcionario.Register;
 
@@ -27,7 +28,8 @@ public class RegisterUseCase
             Salario = request.Salario,
             Usuario = request.Usuario,
             Senha = request.Senha,
-            Setor = request.Setor
+            Setor = request.Setor,
+            Email = request.Email
         };
 
         await _dbContext.Funcionarios.AddAsync(entity);
@@ -63,5 +65,22 @@ public class RegisterUseCase
         if (request.Salario <= 0)
             throw new ErrorBadRequestException("Salário é invalido!");
 
+        if (!EmailIsValid(request.Email))
+            throw new ErrorBadRequestException("Email é invalido!");
+
+
+    }
+
+    private bool EmailIsValid(string email)
+    {
+        try
+        {
+            new MailAddress(email);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
     }
 }

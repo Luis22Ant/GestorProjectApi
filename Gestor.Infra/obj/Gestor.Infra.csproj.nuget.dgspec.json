@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Elton Oliveira\\Documents\\Gestor\\Gestor\\Gestor.Infra\\Gestor.Infra.csproj": {}
+    "C:\\Users\\galoc\\Desktop\\GestorProjectApi\\Gestor.Infra\\Gestor.Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Elton Oliveira\\Documents\\Gestor\\Gestor\\Gestor.Infra\\Gestor.Infra.csproj": {
+    "C:\\Users\\galoc\\Desktop\\GestorProjectApi\\Gestor.Infra\\Gestor.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elton Oliveira\\Documents\\Gestor\\Gestor\\Gestor.Infra\\Gestor.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\galoc\\Desktop\\GestorProjectApi\\Gestor.Infra\\Gestor.Infra.csproj",
         "projectName": "Gestor.Infra",
-        "projectPath": "C:\\Users\\Elton Oliveira\\Documents\\Gestor\\Gestor\\Gestor.Infra\\Gestor.Infra.csproj",
-        "packagesPath": "C:\\Users\\Elton Oliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elton Oliveira\\Documents\\Gestor\\Gestor\\Gestor.Infra\\obj\\",
+        "projectPath": "C:\\Users\\galoc\\Desktop\\GestorProjectApi\\Gestor.Infra\\Gestor.Infra.csproj",
+        "packagesPath": "C:\\Users\\galoc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\galoc\\Desktop\\GestorProjectApi\\Gestor.Infra\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Elton Oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\galoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,7 +36,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -51,17 +47,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -80,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

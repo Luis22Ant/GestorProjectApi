@@ -12,3 +12,18 @@ C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.
 C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.pdb
 C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.genruntimeconfig.cache
 C:\Users\Elton Oliveira\Documents\Gestor\Gestor\Gestor.Exception\obj\Debug\net8.0\ref\Gestor.Exception.dll
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.exe
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.deps.json
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.runtimeconfig.json
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.dll
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\bin\Debug\net8.0\Gestor.Exception.pdb
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.AssemblyInfoInputs.cache
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.AssemblyInfo.cs
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.csproj.CoreCompileInputs.cache
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.sourcelink.json
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.dll
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\refint\Gestor.Exception.dll
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.pdb
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\Gestor.Exception.genruntimeconfig.cache
+C:\Users\galoc\Desktop\GestorProjectApi\Gestor.Exception\obj\Debug\net8.0\ref\Gestor.Exception.dll

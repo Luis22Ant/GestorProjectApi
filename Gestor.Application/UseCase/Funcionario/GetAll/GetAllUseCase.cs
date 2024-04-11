@@ -1,7 +1,6 @@
 ﻿using Gestor.Communication.Response;
 using Gestor.Exception;
 using Gestor.Infra;
-using Gestor.Infra.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gestor.Application.UseCase.Funcionario.GetAll;

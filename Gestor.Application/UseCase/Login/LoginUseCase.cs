@@ -16,7 +16,7 @@ public class LoginUseCase
 
     public async Task<ResponseLogin> Execute(string user,string senha)
     {
-        var entity = await _dbContext.Funcionarios.FirstOrDefaultAsync(p => p.Usuario == user && p.Senha == senha);
+        var entity = await _dbContext.Funcionarios.FirstOrDefaultAsync(p => p.Usuario == user && p.Senha == senha );
 
         if (entity is null)
             throw new UnauthorizedAccess("Login ou senha incorretos!");

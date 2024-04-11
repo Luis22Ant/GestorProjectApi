@@ -27,26 +27,12 @@ namespace Gestor.Infra.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Demandas",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    IdCliente = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    IdFuncionario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    IdProjeto = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Demandas", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Funcionarios",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Usuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Salario = table.Column<double>(type: "float", nullable: false),
@@ -72,6 +58,32 @@ namespace Gestor.Infra.Migrations
                 {
                     table.PrimaryKey("PK_Projetos", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Demandas",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    IdCliente = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    IdFuncionario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    IdProjeto = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Demandas", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Demandas_Funcionarios_IdFuncionario",
+                        column: x => x.IdFuncionario,
+                        principalTable: "Funcionarios",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Demandas_IdFuncionario",
+                table: "Demandas",
+                column: "IdFuncionario");
         }
 
         /// <inheritdoc />
@@ -84,10 +96,10 @@ namespace Gestor.Infra.Migrations
                 name: "Demandas");
 
             migrationBuilder.DropTable(
-                name: "Funcionarios");
+                name: "Projetos");
 
             migrationBuilder.DropTable(
-                name: "Projetos");
+                name: "Funcionarios");
         }
     }
 }

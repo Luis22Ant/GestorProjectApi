@@ -17,7 +17,7 @@ namespace Gestor.Infra.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -70,6 +70,8 @@ namespace Gestor.Infra.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdFuncionario");
+
                     b.ToTable("Demandas");
                 });
 
@@ -78,6 +80,10 @@ namespace Gestor.Infra.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -128,6 +134,20 @@ namespace Gestor.Infra.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Projetos");
+                });
+
+            modelBuilder.Entity("Gestor.Infra.Entities.Demanda", b =>
+                {
+                    b.HasOne("Gestor.Infra.Entities.Funcionario", null)
+                        .WithMany("Demandas")
+                        .HasForeignKey("IdFuncionario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Gestor.Infra.Entities.Funcionario", b =>
+                {
+                    b.Navigation("Demandas");
                 });
 #pragma warning restore 612, 618
         }
